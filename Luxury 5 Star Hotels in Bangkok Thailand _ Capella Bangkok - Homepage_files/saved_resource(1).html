@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!-- saved from url=(0162)file:///C:/Users/migue/code/capella-bot-demo/Luxury%205%20Star%20Hotels%20in%20Bangkok%20Thailand%20_%20Capella%20Bangkok%20-%20Homepage_files/saved_resource.html -->
+<html class=" js no-touch js no-touch js no-touch js no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="YES">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Capella Bangkok</title>
+
+        <link rel="stylesheet" href="./base-common.combine.714e56a3.css">
+
+        <!-- Head Slot (start) -->
+                <!-- Head Slot (end) -->
+
+        <!-- Custom CSS (start) -->
+        <style id="custom-css">.load-more {
+  background: none;
+  display: block ;
+  width: 50%;
+  margin: 0 auto;
+  color: #5C4E63;
+  position: relative;
+  padding: 8px 20px 10px;
+  text-align: center;
+  font: calibre;
+  font-size: 14px;
+  letter-spacing: 0.03rem;
+}
+.load-more:hover {
+  background: none;
+  color: #232323;
+  border: none;
+}
+</style>
+        <!-- Custom CSS (end) -->
+
+        <!-- Sentry -->
+        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" src="./raven.min.js.download" integrity="sha384-emluOS7+UrA6MIOAWxw8L52iFpZNh7+i1kKBfkofwZJn/s66JpKS9gR1ZMOwiayX" crossorigin="anonymous"></script>
+    <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" src="./sentry.js.download" data-dsn=""></script>
+
+        <!-- Lightbox Custom JS (start) -->
+        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" type="text/html" id="lightbox-custom-js"></script>
+        <!-- Lightbox Custom JS (end) -->
+
+        <!-- Lightbox Custom CSS (start) -->
+        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" type="text/html" id="lightbox-custom-css"></script>
+        <!-- Lightbox Custom CSS (end) -->
+
+        
+            <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" src="./https-rules.1745382507.min.js.download"></script>
+        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" type="text/html" id="tpl-video"><!-- Video Embed Code (start) -->
+{{#show_video}}
+{{#is_ie8}}
+<div class="stacklapopup-image-wrapper">
+    <a href="{{video_url}}" target="_blank">
+        <img src="{{image}}" alt="{{image_alt_text}}">
+        <div class="stacklapopup-play-icon"></div>
+    </a>
+</div>
+{{/is_ie8}}
+{{^is_ie8}}
+<div class="stacklapopup-video-wrapper">
+    <div class="stacklapopup-video-wrapper-inner">
+        <div class="stacklapopup-video {{dimensions}}" style="position: relative">
+        {{#is_reel}}
+        <i class="reel-icon"/>
+        {{/is_reel}}
+        {{#isShort}}
+        <i class="short-icon"/>
+        {{/isShort}}
+        {{#embed_url}}
+            {{#is_vimeo}}
+            <iframe width="640" height="360" src="//player.vimeo.com/video/{{embed_url}}" frameborder="0" class="stacklapopup-iframe" />
+            {{/is_vimeo}}
+
+            {{#is_vine}}
+            <iframe src="{{embed_url}}/embed/simple" width="640" height="640" frameborder="0" class="stacklapopup-iframe stackla-vine" />
+            {{/is_vine}}
+
+            {{#is_tiktok}}
+            <iframe src="{{embed_url}}/embed/simple" width="640" height="640" frameborder="0" class="stacklapopup-iframe" />
+            {{/is_tiktok}}
+
+            {{#is_youtube}}
+                {{#isShort}}
+                    <iframe width="419" height="744" src="//www.youtube.com/embed/{{embed_url}}?autoplay=1&mute=1" allowfullscreen="allowFullScreen" frameborder="0" class="stacklapopup-iframe-short" />
+                {{/isShort}}
+                {{^isShort}}
+                    <iframe type="text/html" width="640" height="360" src="//www.youtube.com/embed/{{embed_url}}?autoplay=1&mute=1" allowfullscreen="allowFullScreen" frameborder="0" class="stacklapopup-iframe" />
+                {{/isShort}}
+            {{/is_youtube}}
+
+            {{#is_weibo}}
+            <iframe type="text/html" width="480" height="480" src="http://video.weibo.com/show?fid={{embed_url}}" frameborder="0" class="weibo-iframe" />
+            {{/is_weibo}}
+        {{/embed_url}}
+
+        {{#is_mp4}}
+            {{#is_firefox}}
+            <video
+                style="display:none"
+                oncanplay="this.style.display='block'"
+                class="video-js vjs-default-skin"
+                controls autoplay playsinline
+                preload="auto"
+                width="640"
+                height="640"
+                poster=""
+                data-setup=""
+                {{#is_reel}}
+                loop
+                {{/is_reel}}
+                onerror="window.Stackla.WidgetManager.onAssetError('{{id}}')">
+                <source src="{{{mp4_url}}}" type="video/mp4" />
+            </video>
+            {{/is_firefox}}
+
+            {{^is_firefox}}
+            <video
+                style="display:none"
+                oncanplay="this.style.display='block'"
+                src="{{{mp4_url}}}"
+                class="video-js vjs-default-skin"
+                controls autoplay playsinline
+                preload="auto" width="640" height="640" poster=""
+                onerror="window.Stackla.WidgetManager.onAssetError('{{id}}')"
+                {{#is_reel}}
+                loop
+                {{/is_reel}}>
+                {{#image}}
+                <img
+                    src="{{image}}"
+                    width="100%"
+                    class="unknown-video"
+                    onerror="window.Stackla.WidgetManager.onAssetError('{{id}}')"/>
+                {{/image}}
+            </video>
+            {{/is_firefox}}
+        {{/is_mp4}}
+
+        {{#is_facebook}}
+        <div
+            class="fb-video"
+            data-autoplay="true"
+            data-href="{{{link_post}}}"
+            data-show-text="false">
+        </div>
+        {{/is_facebook}}
+
+        {{#is_unknown_video}}
+            {{#image}}
+            <a href="{{original_link}}" target="_blank">
+                <img
+                    src="{{image}}"
+                    width="100%"
+                    class="unknown-video"
+                    onerror="window.Stackla.WidgetManager.onAssetError('{{id}}')"/>
+                <div class="stacklapopup-play-icon"></div>
+            </a>
+            {{/image}}
+        {{/is_unknown_video}}
+
+
+
+        </div>
+    </div>
+</div>
+{{/is_ie8}}
+{{/show_video}}
+<!-- Video Embed Code (end) -->
+</script>        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=" type="text/html" id="tpl-product-list">
+<div class="stacklapopup-products-wrap">
+    <ul class="stacklapopup-products">
+        {{#products}}
+        <li class="stacklapopup-products-item" data-tag-id="{{id}}">
+            {{#tag}}
+            <a href="{{{custom_url}}}" target="_blank" class="stacklapoup-prodcuts-item-title-wrap">
+                <h2 class="stacklapopup-products-item-title">{{tag}}</h2>
+            </a>
+            {{/tag}}
+            {{#image_small_url}}
+            <div class="stacklapopup-products-item-image">
+                 <img src="{{{image_small_url}}}" width="{{image_small_width}}" height="{{image_small_height}}">
+            </div>
+            {{/image_small_url}}
+            <div class="stacklapopup-products-item-content">
+                {{#price}}
+                <div class="stacklapopup-products-item-price">{{price}}</div>
+                {{/price}}
+                {{#description}}
+                <p class="stacklapopup-products-item-description">{{description}}</p>
+                {{/description}}
+                <a href="{{{custom_url}}}" target="{{target}}" class="stacklapoup-prodcuts-item-button-wrap">
+                    <span class="stacklapopup-products-item-button">{{cta_text}}</span>
+                </a>
+            </div>
+            <a href="javascript:void(0)" title="Close" class="stacklapopup-products-item-close-link">×</a>
+        </li>
+        {{/products}}
+    </ul>
+</div>
+</script>
+
+        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=">
+        window.Stackla = window.Stackla || {
+            debug: false,
+            widgetType: 'base_grid'
+        };
+        </script>
+    <!-- Custom Inline CSS (start) --><style type="text/css">
+.load-more {
+  background: none;
+  display: block ;
+  width: 50%;
+  margin: 0 auto;
+  color: #5C4E63;
+  position: relative;
+  padding: 8px 20px 10px;
+  text-align: center;
+  font: calibre;
+  font-size: 14px;
+  letter-spacing: 0.03rem;
+}
+.load-more:hover {
+  background: none;
+  color: #232323;
+  border: none;
+}
+</style><!-- Custom Inline CSS (end) --><!-- Custom Inline CSS (start) --><style type="text/css">
+.load-more {
+  background: none;
+  display: block ;
+  width: 50%;
+  margin: 0 auto;
+  color: #5C4E63;
+  position: relative;
+  padding: 8px 20px 10px;
+  text-align: center;
+  font: calibre;
+  font-size: 14px;
+  letter-spacing: 0.03rem;
+}
+.load-more:hover {
+  background: none;
+  color: #232323;
+  border: none;
+}
+</style><!-- Custom Inline CSS (end) --></head>
+    <body class="cf-capellabangkok ugc-widget-wrapper" style="background: transparent;">
+        <div class="queue"><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="61333e8fe6c9067c6b67aa3d" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-09/61333e8fe6c9067c6b67aa3d_da761d60-0d63-11ec-8c38-65d87a564130.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60e69db89b290e62a835b9d0" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/60e69db89b290e62a835b9d0_4e967ea0-e542-11eb-8dbf-4bccdd411c27.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60e323e17868d253b0b9ace7" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/60e323e17868d253b0b9ace7_f97bfed0-e605-11eb-b268-c798674b8257.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60dd753079e8c027866f0c02" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/60dd753079e8c027866f0c02_dc25b440-da41-11eb-9bdc-c38f898d8ca1.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60d007d791fea56e4e1120b1" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/60d007d791fea56e4e1120b1_3f16d4c0-de21-11eb-9bfe-53acef44886e.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6107c9caab527c42579753d7" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-08/6107c9caab527c42579753d7_fc96af00-f37c-11eb-b647-6f5b494f3357.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60aa2a9c1bd59974bb6e7a76" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-06/60aa2a9c1bd59974bb6e7a76_e5349960-c52a-11eb-a0b7-07e0b7fcbbd8.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="607d5a27e580e402ebabd345" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/607d5a27e580e402ebabd345_c756ab10-e512-11eb-ae1b-1d01bc48c7d5.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="607a934fc021c2248f03f614" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-08/607a934fc021c2248f03f614_e45bae10-f357-11eb-8fb7-4173fab86cde.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="610788ccb402bb4bcaf23001" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-08/610788ccb402bb4bcaf23001_3d5834e0-f356-11eb-8fb7-4173fab86cde.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60658faab9a8e26d85d4b87a" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/60658faab9a8e26d85d4b87a_555e91a0-e51f-11eb-a42b-a166320af0ce.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="60ef9bc337d66b4762d311fb" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/60ef9bc337d66b4762d311fb_6f774980-e513-11eb-b43c-8d7320b532f3.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6058ccecf20832482724bade" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-03/6058ccecf20832482724bade_23da1e90-8b94-11eb-a54e-9917ef8ca930.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6053eccac901f8c13f64020e" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-07/6053eccac901f8c13f64020e_d8aaa9a0-e5fa-11eb-b560-f7c2ccdb0f88.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6051f81842c50c247a43a909" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-06/6051f81842c50c247a43a909_e5866ce0-c99e-11eb-ad7e-bbed1d8ee295.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="61079a986600614905ecd6d0" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-08/61079a986600614905ecd6d0_d8be9230-f360-11eb-b674-21a6c64d1f45.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6048ddd003ed9a47e7370510" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-08/6048ddd003ed9a47e7370510_9ae4fc80-f8d6-11eb-a667-8511484b4cbc.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6046d5c46f9fb5a4d1461c04" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-03/6046d5c46f9fb5a4d1461c04_657dc5c0-80a6-11eb-a42a-cf9ac322b4e8.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6046d5c4753b74a4ba807dc5" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-03/6046d5c4753b74a4ba807dc5_6555cb60-80a6-11eb-a42a-cf9ac322b4e8.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6046d5c46f9fb5a4d1461c06" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&#39;https://media-library.stackla.com/10/capellahotels/2021-03/6046d5c46f9fb5a4d1461c06_65e1dec0-80a6-11eb-a42a-cf9ac322b4e8.jpeg?format=webp&amp;d=400&#39;);">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div></div>
+<div class="track" style="">
+    <div class="container" style="height: 509.6px;"><div class="tile tile--image expand-click-through  base_grid_tile" data-id="6375c035c3244f6ffc156d2a" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://content-cdn.stackla.com/3094/6375c035c3244f6ffc156d2a/image/s&quot;); height: 250.8px; left: 0px; position: absolute; opacity: 1; top: 0px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-pin-position="2" data-id="6082bac4b893aeb2e0eef073" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://content-cdn.stackla.com/3094/6082bac4b893aeb2e0eef073/image/s&quot;); height: 250.8px; left: 258.8px; position: absolute; opacity: 1; top: 0px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-pin-position="3" data-id="60a9e3792071895f09321bc4" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://media-library.stackla.com/10/capellahotels/2021-07/60a9e3792071895f09321bc4_1b8e58a0-dff4-11eb-969d-8b303126b0ee.jpeg?format=webp&amp;d=400&quot;); height: 250.8px; left: 517.6px; position: absolute; opacity: 1; top: 0px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-pin-position="4" data-id="605614287fe37c6da6bd4cd1" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://media-library.stackla.com/10/capellahotels/2021-04/605614287fe37c6da6bd4cd1_9b517c70-984b-11eb-bde2-49462120dfd0.jpeg?format=webp&amp;d=400&quot;); height: 250.8px; left: 776.4px; position: absolute; opacity: 1; top: 0px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image expand-click-through  base_grid_tile" data-id="62c4018a26de952b4041938d" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://content-cdn.stackla.com/3094/62c4018a26de952b4041938d/image/s&quot;); height: 250.8px; left: 1035.2px; position: absolute; opacity: 1; top: 0px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-pin-position="6" data-id="60a34c471bc5c54dd8930829" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://content-cdn.stackla.com/3094/60a34c471bc5c54dd8930829/image/s&quot;); height: 250.8px; left: 0px; position: absolute; opacity: 1; top: 258.8px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6157305153334b0f43ed35ca" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://media-library.stackla.com/10/capellahotels/2021-10/6157305153334b0f43ed35ca_8d4fec50-22d0-11ec-95f0-8f987161985a.jpeg?format=webp&amp;d=400&quot;); height: 250.8px; left: 258.8px; position: absolute; opacity: 1; top: 258.8px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="6169249d42eebe7711ac1b55" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://media-library.stackla.com/10/capellahotels/2021-10/6169249d42eebe7711ac1b55_2396ef70-2d84-11ec-97eb-95813f03c9ce.jpeg?format=webp&amp;d=400&quot;); height: 250.8px; left: 517.6px; position: absolute; opacity: 1; top: 258.8px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-id="613f6e98b6193565cf722fcb" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://media-library.stackla.com/10/capellahotels/2021-09/613f6e98b6193565cf722fcb_62648f80-15ee-11ec-b240-a75fd6e12a5e.jpeg?format=webp&amp;d=400&quot;); height: 250.8px; left: 776.4px; position: absolute; opacity: 1; top: 258.8px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div><div class="tile tile--image tile--pinned expand-click-through  base_grid_tile" data-pin-position="10" data-id="60873a7e5fe7b71c4975a73e" data-network="instagram" data-media="image" data-has-image="true" data-identity="" data-width="250.79999999999998" data-height="250.79999999999998" style="background-image: url(&quot;https://media-library.stackla.com/10/capellahotels/2021-04/60873a7e5fe7b71c4975a73e_bbf42960-a821-11eb-b690-9d0e7bdcd649.jpeg?format=webp&amp;d=400&quot;); height: 250.8px; left: 1035.2px; position: absolute; opacity: 1; top: 258.8px; width: 250.8px;">
+    <div class="tile-image" style="width: 250.79999999999998px; height: 250.79999999999998px;">
+    </div>
+    <div class="tile-source tile-source-instagram">
+        <i class="fs fs-instagram"></i>
+    </div>
+</div></div>
+</div>
+
+
+        <script src="./base-common.combine.ddcccc60.js.download"></script>
+
+        <!--// Include socialHubConfig //-->
+
+                    <script src="./trackla.combine.6199cc55.js.download"></script>
+<script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=">
+(function() {
+    if (window.Stackla && window.Stackla.Trackla) {
+        new window.Stackla.Trackla({"stackId":"3094","tracklaEndPoint":"https:\/\/trackla.stackla.com"});
+    }
+}());
+</script>
+        
+        <!-- Customisable Strings (start) -->
+        <script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=">
+        var Strings = {
+            "load_more": "Load more",
+            "loading": "Loading...",
+            "scroll_load": "Loading...",
+            "scroll_end": "There is no more content to be displayed."
+        };
+        </script>
+        <!-- Customisable Strings (end) -->
+
+        <!-- Last Slot (start) -->
+        <script src="./base_grid.combine.225ca800.js.download"></script>
+
+    <link rel="stylesheet" href="./base_grid_old.combine.76527644.css">
+    
+<script src="./base_grid.combine.864e9b42.js.download"></script>
+
+<!-- Custom JS (start) -->
+<script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=">
+Strings.load_more = 'DISCOVER MORE';
+
+</script>
+<!-- Custom JS (end) -->
+
+<script nonce="f9FjEEVGrLrxqqiTcbWDxXzPsMy+mobxgPrG/Do50YY=">
+(function () {
+    var setting = _.assign({"parent_id":null,"name":"Capella Bangkok","external_js":null,"config":{"lightbox":{"apply_custom_sharing_title_on_miss_title":false,"disable_short_url":false,"fallback_share_image":"","layout":"portrait","post_comments":false,"sharing_text":"","sharing_title":"","show_additional_info":true,"show_caption":false,"show_timestamp":true,"show_comments":false,"show_dislikes":false,"show_likes":false,"show_nav":true,"show_sharing":false,"show_shopspots":true,"show_products":true,"show_tags":false,"show_votes":false,"show_powered_by_stackla":false,"analytics":{"propertyId":null,"events":{"load":false,"tileExpand":false,"pinClick":false,"userClick":false,"shareClick":false,"moreLoad":false,"shopspotFlyoutExpand":false,"productActionClick":false,"impression":false,"likeClick":false,"dislikeClick":false,"voteClick":false},"nonInteractionEvents":{"load":false,"tileExpand":false,"pinClick":false,"userClick":false,"shareClick":false,"moreLoad":false,"shopspotFlyoutExpand":false,"productActionClick":false,"impression":false,"likeClick":false,"dislikeClick":false,"voteClick":false},"categoryName":"","enabledCustomCategoryName":false,"eventLabel":"default","trackingId":null,"isOverridden":false,"isDisabled":false,"isActive":true,"widgetName":"Capella Bangkok","widgetId":75627,"accountId":null,"dataStreamId":null,"domainName":null,"trackingStatus":true},"show_cross_seller":false,"google_ads":{"network_id":null,"ad_unit_id":null,"ad_zone":null,"ad_unit_width":300,"ad_unit_height":250,"ad_default_slug":null,"ad_tag_id":null,"position":4}},"tile_options":{"show_nav":true,"show_shopspots":false}},"id":"75627","guid":"5f9fa199a95ce","stack_id":"3094","filter":[],"style":{"click_through_url":"[EXPAND]","margin":8,"name":"Capella Bangkok","rows":2,"show_powered_by_stackla":false,"shopspot_btn_background":"0198CF","shopspot_btn_font_color":"ffffff","shopspot_icon":"","style":"base_grid","tile_size":"medium","type":"fluid","widget_background":"transparent","load_more_type":"static"},"css":"","custom_css":".load-more {\r\n  background: none;\r\n  display: block ;\r\n  width: 50%;\r\n  margin: 0 auto;\r\n  color: #5C4E63;\r\n  position: relative;\r\n  padding: 8px 20px 10px;\r\n  text-align: center;\r\n  font: calibre;\r\n  font-size: 14px;\r\n  letter-spacing: 0.03rem;\r\n}\r\n.load-more:hover {\r\n  background: none;\r\n  color: #232323;\r\n  border: none;\r\n}\r\n","custom_js":"Strings.load_more = 'DISCOVER MORE';\r\n\r\n","lightbox_custom_js":"","lightbox_custom_css":"","custom_tile":"","filter_id":"133936","slug":"capellahotels.stackla.com","status":"production","short_name":"capellahotels","stack_config":{"stackla_analytics":null,"disable_badword_content":"no","filter_by_claimed":null,"enable_brightcove_video_cloud":null,"shopspots":null,"enable_trackla":1,"enable_trackla_on_gen1_widgets":null,"enable_old_widget_styling":true,"enable_ig_video_refresh":null},"stub":"capellabangkok","widget_type_name":"Grid","widget_type_style":"base_grid","widget_type_gen":"2","custom_templates":{"tile":{"display_name":"Tile","html_id":"tile","mandatory":1,"use_default_template":1,"template":"<div\n    class=\"{{class_names}} {{tagClassNames}} base_grid_tile\"\n    {{#position}}data-pin-position=\"{{position}}\"{{\/position}}\n    data-id=\"{{id}}\"\n    data-network=\"{{source}}\"\n    data-media=\"{{media}}\"\n    data-has-image=\"{{has_image}}\"\n    data-identity=\"{{source_user_id}}\"\n    data-width=\"{{photo_width}}\"\n    data-height=\"{{photo_height}}\"\n    {{#click_through_link}}data-click-through-link=\"{{click_through_link}}\"{{\/click_through_link}}\n    {{#click_through_url}}data-click-through-url=\"{{click_through_url}}\"{{\/click_through_url}}\n    {{^isInstagramVideo}}style=\"background-image: url('{{image_thumbnail_url}}');\"{{\/isInstagramVideo}}>\n    {{#is_audio}}\n    <div class=\"fs fs-volume-high tile-audio-play\"><\/div>\n    {{\/is_audio}}\n    {{#isInstagramVideo}}\n    <video width=\"100%\">\n        <source src={{mp4_url}} type=\"video\/mp4\" \/>\n    <\/video>\n    {{\/isInstagramVideo}}\n    {{#is_reel}}\n        <i class=\"reel-icon\"\/>\n    {{\/is_reel}}\n    {{#isShort}}\n        <i class=\"short-icon\"\/>\n    {{\/isShort}}\n    {{#is_video}}\n    <div class=\"fs fs-play tile-video-play base-grid-tile\"><\/div>\n    {{\/is_video}}\n    <div\n        class=\"tile-image\"\n        style=\"width: {{photo_width}}px; height: {{photo_height}}px;\">\n    <\/div>\n    {{#show_shopspots}}\n        {{#shopspots.length}}\n            <span class=\"tile-shopspot-badge\"\n                  id=\"tile-shopspot-badge\"\n                  style=\"left: 15px; top:15px;\n                    {{style}}\">\n                <i class=\"tile-shopspot-icon shopspot fs fs-tag\"\n                   style=\"{{inner_style}}\"><\/i>\n                <span class=\"tile-shopspot-count\">{{shopspots.length}}<\/span>\n            <\/span>\n        {{\/shopspots.length}}\n        {{#shopspots}}\n            <span class=\"tile-shopspot-spot tile-shopspot shopspot {{#show_shopspots}}tile-shopspot-wrapper{{\/show_shopspots}}\"\n                id=\"tile-shopspot-{{_id}}\"\n                style=\"display:none; left:{{coords.0}}%; top:{{coords.1}}%;\n                    {{#use_custom_shopspot_icon}}\n                    background-color: transparent;\n                    border-radius: initial;\n                    padding: 0;\n                    {{\/use_custom_shopspot_icon}}\">\n               {{tag.tag}}\n            <\/span>\n        {{\/shopspots}}\n    {{\/show_shopspots}}\n    <div class=\"tile-source tile-source-{{source}}\">\n        <i class=\"fs fs-{{icon_name}}\"><\/i>\n    <\/div>\n<\/div>\n","created":"2021-10-19 06:21:50","modified":"0000-00-00 00:00:00"}},"enable_old_widget_styling":true,"click_through_url":"{\"ct\":\"[EXPAND]\",\"domain\":\"widget.stackla.com\"}","search":null,"brand":"","categories":"","fallbacks":null,"product_link_attribute":"","tags":null,"data_tags":null,"tile_id":null,"tags_grouped_as":null,"geohash":null,"widget_id":"75627","tag_group":null,"available_products_only":null,"fallback_filter_id":null,"permission":{"claim":true,"shopspot":true,"analytics":true,"google_ads":true},"templates":{"tile":{"display_name":"Tile","html_id":"tile","mandatory":1,"use_default_template":1,"template":"<div\n    class=\"{{class_names}} {{tagClassNames}} base_grid_tile\"\n    {{#position}}data-pin-position=\"{{position}}\"{{\/position}}\n    data-id=\"{{id}}\"\n    data-network=\"{{source}}\"\n    data-media=\"{{media}}\"\n    data-has-image=\"{{has_image}}\"\n    data-identity=\"{{source_user_id}}\"\n    data-width=\"{{photo_width}}\"\n    data-height=\"{{photo_height}}\"\n    {{#click_through_link}}data-click-through-link=\"{{click_through_link}}\"{{\/click_through_link}}\n    {{#click_through_url}}data-click-through-url=\"{{click_through_url}}\"{{\/click_through_url}}\n    {{^isInstagramVideo}}style=\"background-image: url('{{image_thumbnail_url}}');\"{{\/isInstagramVideo}}>\n    {{#is_audio}}\n    <div class=\"fs fs-volume-high tile-audio-play\"><\/div>\n    {{\/is_audio}}\n    {{#isInstagramVideo}}\n    <video width=\"100%\">\n        <source src={{mp4_url}} type=\"video\/mp4\" \/>\n    <\/video>\n    {{\/isInstagramVideo}}\n    {{#is_reel}}\n        <i class=\"reel-icon\"\/>\n    {{\/is_reel}}\n    {{#isShort}}\n        <i class=\"short-icon\"\/>\n    {{\/isShort}}\n    {{#is_video}}\n    <div class=\"fs fs-play tile-video-play base-grid-tile\"><\/div>\n    {{\/is_video}}\n    <div\n        class=\"tile-image\"\n        style=\"width: {{photo_width}}px; height: {{photo_height}}px;\">\n    <\/div>\n    {{#show_shopspots}}\n        {{#shopspots.length}}\n            <span class=\"tile-shopspot-badge\"\n                  id=\"tile-shopspot-badge\"\n                  style=\"left: 15px; top:15px;\n                    {{style}}\">\n                <i class=\"tile-shopspot-icon shopspot fs fs-tag\"\n                   style=\"{{inner_style}}\"><\/i>\n                <span class=\"tile-shopspot-count\">{{shopspots.length}}<\/span>\n            <\/span>\n        {{\/shopspots.length}}\n        {{#shopspots}}\n            <span class=\"tile-shopspot-spot tile-shopspot shopspot {{#show_shopspots}}tile-shopspot-wrapper{{\/show_shopspots}}\"\n                id=\"tile-shopspot-{{_id}}\"\n                style=\"display:none; left:{{coords.0}}%; top:{{coords.1}}%;\n                    {{#use_custom_shopspot_icon}}\n                    background-color: transparent;\n                    border-radius: initial;\n                    padding: 0;\n                    {{\/use_custom_shopspot_icon}}\">\n               {{tag.tag}}\n            <\/span>\n        {{\/shopspots}}\n    {{\/show_shopspots}}\n    <div class=\"tile-source tile-source-{{source}}\">\n        <i class=\"fs fs-{{icon_name}}\"><\/i>\n    <\/div>\n<\/div>\n","created":"2021-10-19 06:21:50","modified":"0000-00-00 00:00:00"}},"domain":"widget.stackla.com","im_domain":"im.stackla.com","stack":{"skipLogging":false},"ttl":60}, {
+        container: '.container',
+        appendRoot: '.queue',
+        media: {
+            exclude: ['text']
+        },
+        request_params: Stackla.Display.Util.getUrlParams(),
+        stackEnabledShopspots: 1,
+        strings: window.Strings || {}
+    });
+
+    // FIXME - Avoid to use global variable
+    window.Stackla = window.Stackla || {};
+    window.Stackla = _.assign(window.Stackla, {
+        debug: false,
+        widgetType: setting.widget_type_style,
+        widgetOptions: setting
+    });
+
+    (new Stackla.GridWidget(setting)).render();
+}());
+</script>
+        <!-- Last Slot (end) -->
+
+        
+        <script src="./impressions.combine.e72d50fe.js.download"></script>
+    
+
+</body></html>
