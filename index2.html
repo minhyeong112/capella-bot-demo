@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<script>
+    // Demo guest data
+    const demoGuests = [
+      { lastName: "blue", room: "101", name: "Mr. Blue", email: "blue@example.com", user_id: "blue-101" },
+      { lastName: "green", room: "708", name: "Mr. Green", email: "green@example.com", user_id: "green-708" }
+    ];
+  
+    // Single prompt for both fields
+    const input = prompt("Enter your last name and room number (e.g. Blue 101):") || "";
+    const [lastNameInput, roomInput] = input.trim().split(/\s+/);
+  
+    const normalizedLastName = (lastNameInput || "").toLowerCase();
+    const normalizedRoom = roomInput || "";
+  
+    console.log("Input last name:", lastNameInput, "->", normalizedLastName);
+    console.log("Input room:", roomInput, "->", normalizedRoom);
+  
+    const guest = demoGuests.find(
+      g => g.lastName === normalizedLastName && g.room === normalizedRoom
+    );
+  
+    if (guest) {
+      console.log("Guest found:", guest);
+      window.intercomSettings = {
+        api_base: "https://api-iam.intercom.io",
+        app_id: "fsvlj3oz",
+        user_id: guest.user_id,
+        name: guest.name,
+        email: guest.email
+      };
+    } else {
+      console.log("Guest not found. Proceeding as anonymous.");
+      window.intercomSettings = {
+        api_base: "https://api-iam.intercom.io",
+        app_id: "fsvlj3oz"
+      };
+      alert("Guest not found. Proceeding as anonymous.");
+    }
+  </script>
+  <script>
+    (function(){
+      var w=window;var ic=w.Intercom;
+      if(typeof ic==="function"){
+        ic('reattach_activator');
+        ic('update',w.intercomSettings);
+      }else{
+        var d=document;
+        var i=function(){i.c(arguments);};
+        i.q=[];
+        i.c=function(args){i.q.push(args);};
+        w.Intercom=i;
+        var l=function(){
+          var s=d.createElement('script');
+          s.type='text/javascript';
+          s.async=true;
+          s.src='https://widget.intercom.io/widget/fsvlj3oz';
+          var x=d.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s,x);
+        };
+        if(document.readyState==='complete'){l();}
+        else if(w.attachEvent){w.attachEvent('onload',l);}
+        else{w.addEventListener('load',l,false);}
+      }
+    })();
+  </script>
+  </body></html>
