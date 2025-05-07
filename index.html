@@ -386,15 +386,30 @@ height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.c
     const normalizedLastName = (lastNameInput || "").toLowerCase();
     const normalizedRoom = roomInput || "";
   
-    console.log("Input last name:", lastNameInput, "->", normalizedLastName);
-    console.log("Input room:", roomInput, "->", normalizedRoom);
-  
     const guest = demoGuests.find(
       g => g.lastName === normalizedLastName && g.room === normalizedRoom
     );
   
-    if (guest) {
-      console.log("Guest found:", guest);
+    // Function to delete all Intercom cookies
+    function deleteIntercomCookies() {
+      var cookies = document.cookie.split("; ");
+      for (var i = 0; i < cookies.length; i++) {
+        var name = cookies[i].split("=")[0];
+        if (name.startsWith("intercom")) {
+          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/";
+        }
+      }
+    }
+  
+    // If not authenticated, wipe Intercom cookies for a fresh chat
+    if (!guest) {
+      deleteIntercomCookies();
+      window.intercomSettings = {
+        api_base: "https://api-iam.intercom.io",
+        app_id: "fsvlj3oz"
+      };
+      alert("Guest not found. Proceeding as anonymous.");
+    } else {
       window.intercomSettings = {
         api_base: "https://api-iam.intercom.io",
         app_id: "fsvlj3oz",
@@ -402,13 +417,6 @@ height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.c
         name: guest.name,
         email: guest.email
       };
-    } else {
-      console.log("Guest not found. Proceeding as anonymous.");
-      window.intercomSettings = {
-        api_base: "https://api-iam.intercom.io",
-        app_id: "fsvlj3oz"
-      };
-      alert("Guest not found. Proceeding as anonymous.");
     }
   </script>
   <script>
